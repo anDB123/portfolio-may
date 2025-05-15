@@ -1,5 +1,6 @@
 import About from './About'
 import './App.scss'
+import Blog from './Blog'
 import Navbar from './navbar'
 import Projects from './Projects'
 function App() {
@@ -18,6 +19,14 @@ function App() {
       </div>
       <div id="projects">
         {Projects()}
+      </div>
+      <div id='blog'>
+        {Blog()}
+      </div>
+      <div id='contact'>
+        <h2> <a href="andrewbrownconsult@gmail.com">andrewbrownconsult@gmail.com</a></h2>
+        <h2><a href="https://www.linkedin.com/in/andrew-brown-b50592183/">Linkedin</a></h2>
+        <h2> <a href="https://github.com/anDB123">Github</a></h2>
       </div>
     </div>
   )
