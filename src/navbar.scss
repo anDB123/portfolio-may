@@ -1,0 +1,55 @@
+$accent: #3eff4e;
+$faint-accent: #8fff98;
+
+
+
+#nav-bar {
+    user-select: none;
+    display: flex;
+    position: fixed;
+    background: black;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vw;
+    z-index: 10;
+    width: 96vw;
+    height: 7vh;
+    align-items: center;
+
+
+    #name-nav {
+        user-select: none;
+        font-size: 2vw;
+
+
+        &:hover {
+            color: $faint-accent;
+
+        }
+    }
+}
+
+#nav-links {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
+
+    li {
+        list-style: none;
+        user-select: none;
+
+        &:hover {
+            color: $faint-accent;
+        }
+    }
+
+    a {
+        color: inherit;
+        font-weight: normal;
+    }
+
+    #selected {
+        color: $accent;
+    }
+}

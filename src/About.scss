@@ -1,0 +1,42 @@
+#about-sect {
+    width: 80vw;
+    padding: 10vw;
+    margin: auto;
+    background-color: rgb(71, 23, 23);
+    margin-top: 20px;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1vw;
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    border-bottom: 1px solid white;
+}
+
+#work-experience-sect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#work-experience-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}

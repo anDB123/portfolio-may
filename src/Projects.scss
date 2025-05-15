@@ -1,0 +1,50 @@
+$faint-accent: #8fff98;
+$content-bg: rgb(9, 9, 79);
+
+#projects-sect {
+    width: 80vw;
+    padding: 10vw;
+    margin: auto;
+    background: $content-bg;
+
+
+    #title {
+        opacity: 100%;
+        padding-left: 3vw;
+        font-size: 5vw;
+    }
+}
+
+
+#projects-grid {
+    opacity: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+}
+
+.projectHero {
+    border-radius: 3vw;
+    width: 100%;
+    height: 15vw;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    overflow: hidden;
+    background: black;
+
+    &:hover {
+        border-color: $faint-accent;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 2vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {}
+
+}
