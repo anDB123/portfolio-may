@@ -1,7 +1,10 @@
+$content-bg: rgb(96, 14, 96);
+
 #blog-wrapper {
-    width: 90vw;
-    padding: 5vw;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
     margin: auto;
-    display: block;
-    background: rgb(51, 0, 90);
+    background-color: $content-bg;
+    margin-top: 20px;
 }

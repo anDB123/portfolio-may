@@ -4,7 +4,6 @@ export default function Navbar() {
         <nav id='nav-bar'>
             <h2 id='name-nav'>Andy Brown</h2>
             <ul id='nav-links'>
-
                 <li><a href="#main">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>

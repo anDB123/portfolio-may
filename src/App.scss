@@ -8,7 +8,14 @@ img {
 #main {
   background: black;
   width: 100vw;
-  margin-top: 0;
+  max-width: 1300px;
+  margin-left: 50vw;
+  transform: translateX(-50%);
+
+}
+
+#all-content {
+  margin-top: 100px;
 }
 
 
@@ -20,7 +27,10 @@ b {
 #big-pic-div {
   position: relative;
   width: 100%;
-  height: 60vw;
+  height: clamp(500px, 60vw, 1000px);
+
+
+
   /* Or your desired size */
   overflow: hidden;
   /* Optional: hides overflow */
@@ -29,7 +39,7 @@ b {
   h1 {
     width: 100%;
     text-align: center;
-    font-size: 17vw;
+    font-size: clamp(1rem, 17vw, 14rem);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,7 +49,10 @@ b {
 
   img {
     position: absolute;
-    width: 100%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
     z-index: 2;
     object-fit: cover;
     /* Optional: scales image nicely */
@@ -48,18 +61,28 @@ b {
   #blurb {
     width: 30%;
     text-align: center;
-    font-size: 2vw;
+    font-size: clamp(1rem, 2vw, 2rem);
     position: absolute;
     top: 70%;
     left: 20%;
     transform: translate(-50%, -50%);
     z-index: 3;
+
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      width: 80%;
+      left: 50%;
+      transform: translate(-50%, 40%);
+      background: #000000;
+      border-radius: 20px;
+    }
+
   }
 
 }
 
 #contact {
-  padding: 5vw;
+  padding: clamp(1rem, 5vw, 2rem);
   margin: auto;
   text-align: center;
 }

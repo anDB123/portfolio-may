@@ -1,6 +1,6 @@
 $accent: #3eff4e;
 $faint-accent: #8fff98;
-
+$max-width: 1500px;
 
 
 #nav-bar {
@@ -9,19 +9,23 @@ $faint-accent: #8fff98;
     position: fixed;
     background: black;
     justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -100px;
     padding-left: 2vw;
     padding-right: 2vw;
-    font-size: 2vw;
+    font-size: clamp(1rem, 2vw, 2rem);
     z-index: 10;
     width: 96vw;
-    height: 7vh;
+    max-width: $max-width;
+    height: 3vw;
+    max-height: 100px;
     align-items: center;
 
 
     #name-nav {
         user-select: none;
-        font-size: 2vw;
-
+        font-size: clamp(1rem, 2vw, 2rem);
 
         &:hover {
             color: $faint-accent;

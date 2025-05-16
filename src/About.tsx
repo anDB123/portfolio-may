@@ -8,7 +8,7 @@ export default function About() {
                 <h1>My Work Experience</h1>
                 <div id="work-experience-list">
                     <div className="job-item">
-                        <h2>Modelling/Optimization Engineer</h2>
+                        <h2>Modelling + Optimization Engineer</h2>
                         <div>
                             <h3>Kinewell Energy</h3>
                             <h4>Jul 24 - Apr 25</h4>
@@ -18,7 +18,7 @@ export default function About() {
                         <h2>Software Engineer II</h2>
                         <div>
                             <h3>Cadence</h3>
-                            <h4>Jul 24 - Apr 25</h4>
+                            <h4>Jun 22 - Jul 24</h4>
                         </div>
                     </div>
                     <div className="job-item">

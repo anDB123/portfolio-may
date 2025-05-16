@@ -1,31 +1,10 @@
 #about-sect {
-    width: 80vw;
-    padding: 10vw;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
     margin: auto;
     background-color: rgb(71, 23, 23);
     margin-top: 20px;
-}
-
-.job-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1vw;
-
-    h2 {
-        font-size: 2vw;
-    }
-
-    h3 {
-        font-size: 1.5vw;
-        text-align: center;
-    }
-
-    h4 {
-        font-size: 1vw;
-        text-align: center;
-    }
-
-    border-bottom: 1px solid white;
 }
 
 #work-experience-sect {
@@ -33,10 +12,37 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 
+    h1 {
+        font-size: clamp(1rem, 4vw, 4rem);
+        text-align: center;
+    }
+
 }
 
 #work-experience-list {
     display: grid;
     grid-template-columns: 1fr;
 
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1vw;
+
+    h2 {
+        font-size: clamp(1rem, 1vw, 2rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 1vw, 2rem);
+        text-align: center;
+    }
+
+    h4 {
+        font-size: clamp(0.7rem, 0.7vw, 1.4rem);
+        text-align: center;
+    }
+
+    border-bottom: 1px solid white;
 }
